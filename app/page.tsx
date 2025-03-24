@@ -1,5 +1,7 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 import { UniversalPass } from "@/components/toasted/test-wallet-card";
+import BoardingPass from "@/components/toasted/wallet-card";
+import PortfolioCard from "@/components/toasted/portfolio-card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,6 +38,12 @@ export default function Home() {
             zone="3"
             seat="20B"
           />
+          <div className="mt-20">
+            <BoardingPass />
+          </div>
+          <div className="mt-20">
+            <PortfolioCard />
+          </div>
         </div>
       </main>
     </div>
