@@ -1,4 +1,5 @@
 import { ThemeToggle } from "@/components/theme-toggle";
+import { UniversalPass } from "@/components/toasted/test-wallet-card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,6 +19,24 @@ export default function Home() {
           </Link>{" "}
           - shadcn-ui components
         </h1>
+        <div className="flex flex-col mt-20">
+          <UniversalPass
+            flight="DL701"
+            departure={{
+              city: "NYC-KENNEDY",
+              code: "JFK",
+              time: "11:20AM",
+            }}
+            arrival={{
+              city: "LOS ANGELES",
+              code: "LAX",
+            }}
+            passenger="AILEEN ZEIGEN"
+            gate="B26"
+            zone="3"
+            seat="20B"
+          />
+        </div>
       </main>
     </div>
   );
